@@ -10,5 +10,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // TODO: Test
+        Puzzle puzzle = new Puzzle(Puzzle.DIFFICULTIES[0]);
+        puzzle.build();
+        System.out.println(puzzle);
     }
 }
